@@ -1,0 +1,25 @@
+{
+  "incident_id": "incident-replay-c",
+  "affected_stop_ids": ["stop-b1", "stop-b2"],
+  "summary": "Road closure on the route-b corridor; the only safe reroute arrives at stop-b2 7 minutes after its hard delivery window closes.",
+  "options": [
+    {
+      "option_id": "opt-approve-late",
+      "title": "Approve reroute with late stop-b2 arrival",
+      "description": "Accept a 420-second lateness at stop-b2; all other stops remain within their windows.",
+      "requires_human_approval": true
+    },
+    {
+      "option_id": "opt-shift-window",
+      "title": "Call recipient to shift stop-b2 window",
+      "description": "Coordinator contacts the stop-b2 recipient to agree a later window, then re-runs the agent.",
+      "requires_human_approval": true
+    },
+    {
+      "option_id": "opt-hold-decision",
+      "title": "Hold route-b and decide later",
+      "description": "No route change is committed; the incident remains pending review.",
+      "requires_human_approval": true
+    }
+  ]
+}

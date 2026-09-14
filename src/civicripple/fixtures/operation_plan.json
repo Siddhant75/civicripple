@@ -1,0 +1,157 @@
+{
+  "operation_id": "op-demo-2026-09-03",
+  "service_date": "2026-09-03",
+  "depot": {"lat": 47.6, "lon": -122.4},
+  "driver_shifts": [
+    {
+      "shift_id": "shift-a",
+      "driver_id": "driver-a",
+      "start": "2026-09-03T08:30:00Z",
+      "end": "2026-09-03T12:30:00Z"
+    },
+    {
+      "shift_id": "shift-b",
+      "driver_id": "driver-b",
+      "start": "2026-09-03T08:30:00Z",
+      "end": "2026-09-03T12:30:00Z"
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "route-a",
+      "driver_id": "driver-a",
+      "stops": [
+        {
+          "stop_id": "stop-a1",
+          "location": {"lat": 47.61, "lon": -122.39},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T12:00:00Z"}
+        },
+        {
+          "stop_id": "stop-a2",
+          "location": {"lat": 47.615, "lon": -122.38},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T12:00:00Z"}
+        },
+        {
+          "stop_id": "stop-a3",
+          "location": {"lat": 47.62, "lon": -122.37},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T12:00:00Z"}
+        },
+        {
+          "stop_id": "stop-a4",
+          "location": {"lat": 47.63, "lon": -122.365},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T12:00:00Z"}
+        }
+      ],
+      "legs": [
+        {
+          "leg_id": "leg-a1",
+          "from_stop_id": "depot",
+          "to_stop_id": "stop-a1",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.4, 47.6], [-122.39, 47.61]]},
+          "planned_departure": "2026-09-03T09:00:00Z",
+          "planned_arrival": "2026-09-03T09:10:00Z",
+          "duration_s": 600
+        },
+        {
+          "leg_id": "leg-a2",
+          "from_stop_id": "stop-a1",
+          "to_stop_id": "stop-a2",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.39, 47.61], [-122.38, 47.615]]},
+          "planned_departure": "2026-09-03T09:15:00Z",
+          "planned_arrival": "2026-09-03T09:25:00Z",
+          "duration_s": 600
+        },
+        {
+          "leg_id": "leg-a3",
+          "from_stop_id": "stop-a2",
+          "to_stop_id": "stop-a3",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.38, 47.615], [-122.37, 47.62]]},
+          "planned_departure": "2026-09-03T09:30:00Z",
+          "planned_arrival": "2026-09-03T09:40:00Z",
+          "duration_s": 600
+        },
+        {
+          "leg_id": "leg-a4",
+          "from_stop_id": "stop-a3",
+          "to_stop_id": "stop-a4",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.37, 47.62], [-122.365, 47.63]]},
+          "planned_departure": "2026-09-03T09:45:00Z",
+          "planned_arrival": "2026-09-03T09:55:00Z",
+          "duration_s": 600
+        }
+      ]
+    },
+    {
+      "route_id": "route-b",
+      "driver_id": "driver-b",
+      "stops": [
+        {
+          "stop_id": "stop-b1",
+          "location": {"lat": 47.59, "lon": -122.41},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T11:00:00Z"}
+        },
+        {
+          "stop_id": "stop-b2",
+          "location": {"lat": 47.58, "lon": -122.42},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T09:00:00Z", "end": "2026-09-03T09:40:00Z"}
+        },
+        {
+          "stop_id": "stop-b3",
+          "location": {"lat": 47.57, "lon": -122.43},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T10:30:00Z"}
+        },
+        {
+          "stop_id": "stop-b4",
+          "location": {"lat": 47.56, "lon": -122.44},
+          "service_duration_s": 300,
+          "time_window": {"start": "2026-09-03T08:00:00Z", "end": "2026-09-03T11:00:00Z"}
+        }
+      ],
+      "legs": [
+        {
+          "leg_id": "leg-b1",
+          "from_stop_id": "depot",
+          "to_stop_id": "stop-b1",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.4, 47.6], [-122.41, 47.59]]},
+          "planned_departure": "2026-09-03T09:00:00Z",
+          "planned_arrival": "2026-09-03T09:15:00Z",
+          "duration_s": 900
+        },
+        {
+          "leg_id": "leg-b2",
+          "from_stop_id": "stop-b1",
+          "to_stop_id": "stop-b2",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.41, 47.59], [-122.42, 47.58]]},
+          "planned_departure": "2026-09-03T09:20:00Z",
+          "planned_arrival": "2026-09-03T09:35:00Z",
+          "duration_s": 900
+        },
+        {
+          "leg_id": "leg-b3",
+          "from_stop_id": "stop-b2",
+          "to_stop_id": "stop-b3",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.42, 47.58], [-122.43, 47.57]]},
+          "planned_departure": "2026-09-03T09:40:00Z",
+          "planned_arrival": "2026-09-03T09:50:00Z",
+          "duration_s": 600
+        },
+        {
+          "leg_id": "leg-b4",
+          "from_stop_id": "stop-b3",
+          "to_stop_id": "stop-b4",
+          "geometry": {"kind": "LineString", "coordinates": [[-122.43, 47.57], [-122.44, 47.56]]},
+          "planned_departure": "2026-09-03T09:55:00Z",
+          "planned_arrival": "2026-09-03T10:05:00Z",
+          "duration_s": 600
+        }
+      ]
+    }
+  ]
+}

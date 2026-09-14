@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivicRipple</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <aside class="rail">
+    <div class="wordmark">Civic<span>Ripple</span></div>
+    <nav>
+      <button data-view="watch" id="nav-watch">On watch</button>
+      <button data-view="today" class="active">Today</button>
+      <button data-view="incident">Incident</button>
+      <button data-view="audit">Audit</button>
+    </nav>
+    <div class="rail-foot">
+      <span id="watch-pill" class="pill">watch off</span>
+      <span id="mode-badge" class="pill quiet">…</span>
+    </div>
+  </aside>
+  <main id="view" tabindex="-1"></main>
+  <div id="banner-slot"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "incident_id": "incident-replay-d",
+  "affected_stop_ids": ["stop-b1", "stop-b2"],
+  "summary": "The routing provider could not prove its alternate route avoids the closed corridor; independent geometry validation found the candidate still crosses it.",
+  "options": [
+    {
+      "option_id": "opt-inspect-candidate",
+      "title": "Inspect the rejected candidate and request a new route",
+      "description": "Coordinator reviews the rejected route and asks the provider for a genuinely avoiding alternate.",
+      "requires_human_approval": true
+    },
+    {
+      "option_id": "opt-hold-decision",
+      "title": "Hold route-b and decide later",
+      "description": "No route change is committed; the incident remains pending review.",
+      "requires_human_approval": true
+    }
+  ]
+}

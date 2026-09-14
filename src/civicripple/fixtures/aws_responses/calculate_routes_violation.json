@@ -1,0 +1,33 @@
+{
+  "LegGeometryFormat": "Simple",
+  "Notices": [{"Code": "ViolatedAvoidAreas", "Impact": "High"}],
+  "Routes": [
+    {
+      "Legs": [
+        {
+          "Type": "Vehicle",
+          "TravelMode": "Car",
+          "VehicleLegDetails": {
+            "Notices": [],
+            "Summary": {"Overview": {"Distance": 2600, "Duration": 1600}}
+          },
+          "Geometry": {
+            "LineString": [[-122.4, 47.6], [-122.41, 47.59]]
+          }
+        },
+        {
+          "Type": "Vehicle",
+          "TravelMode": "Car",
+          "VehicleLegDetails": {
+            "Notices": [],
+            "Summary": {"Overview": {"Distance": 2800, "Duration": 1700}}
+          },
+          "Geometry": {
+            "LineString": [[-122.41, 47.59], [-122.42, 47.58], [-122.43, 47.57], [-122.44, 47.56]]
+          }
+        }
+      ],
+      "MajorRoadLabels": []
+    }
+  ]
+}

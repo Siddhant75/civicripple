@@ -1,0 +1,25 @@
+{
+  "event_id": "evt-no-impact",
+  "type": "ROAD_CLOSURE",
+  "authority": "City of Replayville",
+  "source_url": "https://replay.example/notices/no-impact",
+  "published_at": "2026-09-03T07:30:00Z",
+  "valid_from": "2026-09-03T09:00:00Z",
+  "valid_until": "2026-09-03T12:00:00Z",
+  "geometry": {
+    "kind": "Polygon",
+    "coordinates": [[[-122.30, 47.70], [-122.29, 47.70], [-122.29, 47.71], [-122.30, 47.71], [-122.30, 47.70]]]
+  },
+  "severity": "MODERATE",
+  "facts": [
+    {
+      "field": "closure_status",
+      "value": "closed",
+      "source": "https://replay.example/notices/no-impact",
+      "source_kind": "REPLAY_FIXTURE",
+      "observed_at": "2026-09-03T07:30:00Z",
+      "excerpt_hash": "sha256:replay-no-impact"
+    }
+  ],
+  "verification_status": "UNVERIFIED"
+}

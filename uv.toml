@@ -1,0 +1,3 @@
+# Machine-level TLS interception (corporate proxy) requires the system
+# certificate store for PyPI access.
+native-tls = true

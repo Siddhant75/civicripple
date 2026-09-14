@@ -1,0 +1,18 @@
+{
+  "route_id": "route-b",
+  "provider": "replay-routing",
+  "geometry": {
+    "kind": "LineString",
+    "coordinates": [
+      [-122.4, 47.6],
+      [-122.41, 47.59],
+      [-122.42, 47.58],
+      [-122.43, 47.57],
+      [-122.44, 47.56]
+    ]
+  },
+  "distance_m": 5400,
+  "duration_s": 3300,
+  "provider_notices": ["avoidance_not_honored"],
+  "independently_clear_of_disruption": false
+}

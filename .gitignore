@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+*.egg-info/
+infra/agentcore/build/
+# internal planning material — not part of the public submission
+PROMPTS.md
+docs/superpowers/
+# local deployment state (contains account-specific ARN)
+infra/agentcore/runtime.json
+src/civicripple/fixtures/notices_src/live_cache/
+CLAUDE.md
+docs/demo-video-script.md
+docs/devpost.md
+demo/narration/
+# demo artifacts (recording + narration + final video) stay local
+demo/
+scripts/
+probe_out*.txt
+docs/demo-video-script.md

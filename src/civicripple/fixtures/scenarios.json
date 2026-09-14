@@ -1,0 +1,42 @@
+{
+  "no_impact": {
+    "notice": "notices/no_impact.json",
+    "notice_text": "no_impact.txt",
+    "source_url": "https://notices.replayville.gov/2026/no-impact",
+    "route_candidate": null,
+    "affected_route_ids": [],
+    "expected": "NO_IMPACT"
+  },
+  "feasible_reroute": {
+    "notice": "notices/feasible_closure.json",
+    "notice_text": "feasible_closure.txt",
+    "source_url": "https://notices.replayville.gov/2026/feasible-closure",
+    "route_candidate": "route_candidates/feasible.json",
+    "affected_route_ids": ["route-b"],
+    "expected": "AUTO_RESOLVABLE"
+  },
+  "infeasible_reroute": {
+    "notice": "notices/infeasible_closure.json",
+    "notice_text": "infeasible_closure.txt",
+    "source_url": "https://notices.replayville.gov/2026/infeasible-closure",
+    "route_candidate": "route_candidates/infeasible.json",
+    "affected_route_ids": ["route-b"],
+    "expected": "HUMAN_DECISION_REQUIRED"
+  },
+  "avoidance_failure": {
+    "notice": "notices/feasible_closure.json",
+    "notice_text": "feasible_closure.txt",
+    "source_url": "https://notices.replayville.gov/2026/feasible-closure",
+    "route_candidate": "route_candidates/avoidance_violation.json",
+    "affected_route_ids": ["route-b"],
+    "expected": "HUMAN_DECISION_REQUIRED"
+  },
+  "human_review_payload": {
+    "notice": "notices/infeasible_closure.json",
+    "notice_text": "infeasible_closure.txt",
+    "source_url": "https://notices.replayville.gov/2026/infeasible-closure",
+    "route_candidate": "route_candidates/infeasible.json",
+    "affected_route_ids": ["route-b"],
+    "expected": "HUMAN_DECISION_REQUIRED"
+  }
+}

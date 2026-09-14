@@ -1,0 +1,25 @@
+{
+  "event_id": "evt-infeasible-closure",
+  "type": "ROAD_CLOSURE",
+  "authority": "City of Replayville",
+  "source_url": "https://replay.example/notices/infeasible-closure",
+  "published_at": "2026-09-03T07:45:00Z",
+  "valid_from": "2026-09-03T09:00:00Z",
+  "valid_until": "2026-09-03T12:00:00Z",
+  "geometry": {
+    "kind": "Polygon",
+    "coordinates": [[[-122.418, 47.583], [-122.412, 47.583], [-122.412, 47.587], [-122.418, 47.587], [-122.418, 47.583]]]
+  },
+  "severity": "HIGH",
+  "facts": [
+    {
+      "field": "closure_status",
+      "value": "closed",
+      "source": "https://replay.example/notices/infeasible-closure",
+      "source_kind": "REPLAY_FIXTURE",
+      "observed_at": "2026-09-03T07:45:00Z",
+      "excerpt_hash": "sha256:replay-infeasible-closure"
+    }
+  ],
+  "verification_status": "UNVERIFIED"
+}
